@@ -1,0 +1,114 @@
+.header {
+  background-color: #131313;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  height: 85px;
+}
+
+.logoWrapper {
+  padding: 14px;
+  position: relative;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-color: #5ce600;
+  border: 1px solid white;
+  /* margin: 50px; */
+  position: absolute;
+  animation: turning 8s ease-out 2s infinite alternate;
+}
+
+.logo:hover {
+  animation-play-state: paused;
+}
+
+.logoText {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 24%;
+  left: 68%;
+  font-family: 'Lobster', cursive;
+}
+
+.links {
+  top: 20px;
+  display: flex;
+  position: relative;
+  font-size: 20px;
+}
+
+.link {
+  margin: 0 30px;
+	color: #fff; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: ease-in-out 0.3s;
+}
+.link:hover {
+  transform: scale(1.1);
+}
+.link:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: rgb(255, 255, 255); /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.3s; /* Время эффекта */
+}
+
+.link:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    height: 2px; /* Высота линии */
+    background-color: rgb(218, 218, 218); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialLinks img {
+  width: 30px;
+}
+
+
+@keyframes turning {
+  0% {
+    border-radius: 0 0 0 0;
+    transform: rotate(0deg);
+  }
+
+  25% {
+    border-radius: 50% 0 0 0;
+    transform: rotate(45deg);
+  }
+
+  50% {
+    border-radius: 50% 50% 0 0;
+    transform: rotate(90deg);
+  }
+
+  75% {
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(135deg);
+  }
+
+  100% {
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(180deg);
+  }
+}
