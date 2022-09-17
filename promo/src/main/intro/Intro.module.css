@@ -1,5 +1,5 @@
 .intro {
-  margin: 9% 0 0 10%;
+  margin: 6% 0 0 9%;
   cursor: default;
 }
 
@@ -31,6 +31,7 @@
   font-size: 18px;
   line-height: 30px;
   color: #414141;
+  width: 524px;
 }
 
 span {

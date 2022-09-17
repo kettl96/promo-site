@@ -1,0 +1,31 @@
+.wrapper {
+  background-color: rgb(245, 245, 245);
+}
+.titleWrapper {
+  display: flex;
+  justify-content: center;
+
+}
+.titleLine {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.295);
+  margin-top: 32px;
+  width: 600px;
+  position: absolute;
+}
+
+.title {
+  z-index: 5;
+  color: rgb(99, 99, 99);
+  font-weight: 600;
+  font-size: 18px;
+  background-color: rgb(245, 245, 245);
+  height: 30px;
+  padding: 0 10px;
+  margin: 20px 0 20px 0;
+}
+.projectCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
