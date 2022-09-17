@@ -1,13 +1,14 @@
 .header {
-  background-color: #131313;
+  background-color: #1d1d1d;
   display: flex;
   color: white;
   justify-content: space-around;
-  height: 85px;
+  height: 84px;
 }
 
 .logoWrapper {
-  padding: 14px;
+  cursor: default;
+  padding: 15px;
   position: relative;
 }
 
@@ -16,7 +17,6 @@
   height: 50px;
   background-color: #5ce600;
   border: 1px solid white;
-  /* margin: 50px; */
   position: absolute;
   animation: turning 8s ease-out 2s infinite alternate;
 }
@@ -30,12 +30,12 @@
   font-size: 30px;
   position: absolute;
   top: 24%;
-  left: 68%;
+  left: 64%;
   font-family: 'Lobster', cursive;
 }
 
 .links {
-  top: 20px;
+  top: 25px;
   display: flex;
   position: relative;
   font-size: 20px;
@@ -43,10 +43,10 @@
 
 .link {
   margin: 0 30px;
-	color: #fff; /* Цвет обычной ссылки */
+	color: #fff; 
     position: relative;
     cursor: pointer;
-    text-decoration: none; /* Убираем подчеркивание */
+    text-decoration: none;
     transition: ease-in-out 0.3s;
 }
 .link:hover {
@@ -59,9 +59,9 @@
     right: 0;
     top: 30px;
     width: 0;
-    height: 2px; /* Высота линии */
-    background-color: rgb(255, 255, 255); /* Цвет подчеркивания при исчезании линии*/
-    transition: width 0.3s; /* Время эффекта */
+    height: 2px;
+    background-color: #5ce600;
+    transition: width 0.3s;
 }
 
 .link:hover:after {
@@ -71,20 +71,27 @@
     position: absolute;
     left: 0;
     top: 30px;
-    height: 2px; /* Высота линии */
-    background-color: rgb(218, 218, 218); /* Цвет подчеркивания при появлении линии*/
-    transition: width 0.5s;  /* Время эффекта */
+    height: 2px;
+    background-color: #5ce600;
+    transition: width 0.5s;
 }
 
 .socialLinks {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: -10px;
+}
+.socialLinks a {
+  margin: 0 10px;
 }
 .socialLinks img {
-  width: 30px;
+  width: 32px;
+  transition: ease-in-out 0.5s;
 }
-
+.socialLinks img:hover {
+  transform: rotate(360deg) scale(1.16);
+}
 
 @keyframes turning {
   0% {
@@ -110,5 +117,14 @@
   100% {
     border-radius: 50% 50% 50% 50%;
     transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 620px) {
+  .links {
+    display: none;
+  }
+  .socialLinks {
+    display: none;
   }
 }
