@@ -1,14 +1,17 @@
 .wrapper {
   background-color: rgb(245, 245, 245);
+  height: 1600px;
 }
 .titleWrapper {
   display: flex;
   justify-content: center;
-
+  margin: 0px 0 20px 0;
+  padding-top: 25px;
+  cursor: default;
 }
 .titleLine {
   border-bottom: 2px solid rgba(0, 0, 0, 0.295);
-  margin-top: 32px;
+  margin-top: 12px;
   width: 600px;
   position: absolute;
 }
@@ -21,9 +24,9 @@
   background-color: rgb(245, 245, 245);
   height: 30px;
   padding: 0 10px;
-  margin: 20px 0 20px 0;
+  /* margin: 20px 0 20px 0; */
 }
-.projectCard {
+.projectsWrapper {
   display: flex;
   align-items: center;
   flex-direction: column;

@@ -1,0 +1,83 @@
+.projectCard {
+  display: flex;
+  margin: 0 10px;
+}
+.projectCardTrue {
+  display: flex;
+flex-direction: row-reverse;
+}
+.imgProject {
+  margin: 20px;
+  box-shadow: 0px 0px 12px rgba(41, 241, 0, .85);
+  width: 600px;
+  transition: ease-in-out 0.4s;
+  position: relative;
+}
+
+.imgProject:hover {
+  transform: scale(1.05);
+}
+
+.description {
+  margin-top: 15px;
+  cursor: default;
+/* text-align: end; */
+}
+.lineStart {
+  /* text-align: start; */
+}
+.name {
+  /* text-align: end; */
+  padding: 0 30px 0 0;
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(90, 90, 90);
+}
+
+.text {
+  padding: 20px 20px 20px 30px;
+  background-color: rgba(197, 197, 197, 0.815);
+  margin: 20px 30px 20px -45px;
+  box-shadow: 0 0 8px black;
+  border-radius: 5px;
+  font-size: 18px;
+  position: relative;
+  /* text-align: end; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.4em;
+  transition: ease-in-out 0.4s;
+  color: rgb(46, 46, 46);
+}
+.tech {
+
+}
+
+.linksImg {
+  display: flex;
+}
+
+#link {
+  padding: 2.5px 0 0 2.5px;
+  width: 20px;
+}
+
+.linksImg img {
+  width: 25px;
+  position: absolute;
+}
+
+.linksImg div {
+  width: 26px;
+  height: 26px;
+  padding: 1px 0 0 1px;
+  border-radius: 50%;
+  background-color: black;
+  transition: ease-in-out 0.3s;
+  margin: 15px 5px 5px 10px;
+  /* text-align: start; */
+}
+
+.linksImg div:hover {
+  background-color: rgba(132, 219, 1, 0.925);
+  transform: scale(1.2);
+}
