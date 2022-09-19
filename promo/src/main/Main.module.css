@@ -2,7 +2,9 @@
   display: flex;
   border-bottom: 2px solid rgb(199, 199, 199);
   overflow: hidden;
-  max-height: 596px;
+  height: 80vh;
+  min-height: 590px;
+  padding-bottom: 10px;
 }
 .mainImg {
   margin-top: 40px;
@@ -34,14 +36,14 @@
   position: static;
   z-index: -1;
   margin-top: -50px;
-  margin-left: 130px;
+  margin-left: 100px;
   rotate: -20deg;
 }
 .codeImgBack2 {
   width: 350px;
   filter: blur(1px);
   position: static;
-  margin-left: 160px;
+  margin-left: 125px;
   margin-top: -40px;
   z-index: -2;
   rotate: 72deg;

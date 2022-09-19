@@ -35,7 +35,8 @@ const Card: React.FC<CardPropsType> = ({ num, name, img, text, link, tech, git }
     let tiltY = dx / cx
 
     let radius = Math.sqrt(Math.pow(tiltX, 2) + Math.pow(tiltY, 2))
-    let degree = radius * 18
+    let multiply = window.innerWidth > 1300 ? 15 : 10 
+    let degree = radius * multiply
 
     const anim1 = gsap.to(boxRef?.current, { transform: `rotate3d(${tiltX}, ${tiltY}, 0, ${degree}deg)` });
     return () => {
@@ -53,29 +54,27 @@ const Card: React.FC<CardPropsType> = ({ num, name, img, text, link, tech, git }
     setX(0)
     setY(0)
   }
-  console.log(num);
 
   return (
-    <div className={`${num === 4}` ? s.projectCardTrue : s.projectCardReverse }  >
+    <div className={num % 2 === 0 ? s.projectCardReverse : s.projectCard}  >
       <div ref={boxRef} onMouseMove={moveImg} onMouseOut={stopImg} >
         <a href={link} target='_blank' rel="noreferrer">
           <img src={img} className={s.imgProject} alt="project" />
         </a>
       </div>
-      <div className={s.description} >
+      <div className={num % 2 === 0 ? s.descriptionReverse : s.description} >
         <div className={s.name}>{name}</div>
         <div className={s.text}>{text}</div>
         <div className={s.tech}>{tech}</div>
-        <div className={s.linksImg}>
-          <a href={git}>
-            <div><img src={gitImg} alt="" /></div>
-          </a>
-          <a href={link}>
-            <div><img src={linkImg} alt="" id={s.link} /></div>
-          </a>
-        </div>
-
+        <div className={s.linksImg} style={{ justifyContent: `${num % 2 === 0 ? 'flex-start' : 'flex-end'}`}}>
+        <a href={git} target='_blank' rel="noreferrer">
+          <div><img src={gitImg} alt="" /></div>
+        </a>
+        <a href={link} target='_blank' rel="noreferrer">
+          <div><img src={linkImg} alt="" id={s.link} /></div>
+        </a>
       </div>
+    </div>
     </div >
   )
 }

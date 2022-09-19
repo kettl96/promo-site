@@ -1,33 +1,15 @@
+import React from 'react';
 import s from './Project.module.css'
+import { cardData } from './projectData';
 import Card from './card/Card';
-import rslang from '../assets/projects/rslang.png'
-
-
-
+import Other from './other/Other';
 
 const Project = () => {
-  const cardData = [
-    {
-      id: 1,
-      name: 'RS Lang',
-      img: rslang,
-      text: `A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. 
-      Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.`,
-      link: 'https://rslang-vanya1000.netlify.app/',
-      technology: 'React, Redux Toolkit, TS, MUI',
-      github: 'https://github.com/Vanya1000/rslang'
-    },
-    {
-      id: 2,
-      name: 'store',
-      img: rslang,
-      text: `A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. 
-      Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.`,
-      link: 'https://rslang-vanya1000.netlify.app/',
-      technology: 'React, Redux Toolkit, TS, MUI',
-      github: 'https://github.com/Vanya1000/rslang'
-    }
-  ]
+  const [isOther, setOther] = React.useState(false)
+
+  const openOther = () => {
+    setOther(true)
+  }
 
   return (
     <div className={s.wrapper}>
@@ -50,6 +32,12 @@ const Project = () => {
           )
         })}
       </div>
+      <div className={s.viewBtn__wrapper}>
+        <button onClick={openOther}><span>View other</span><i></i></button>
+      </div>
+      <Other
+        opened={isOther}
+        close={() => setOther(false)} />
     </div>
   )
 }
