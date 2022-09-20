@@ -1,6 +1,7 @@
 import rslang from '../assets/projects/rslang.png'
 import onlineStore from '../assets/projects/onlinestore.png'
 import sneakers from '../assets/projects/sneakers.png'
+import gallery from '../assets/projects/gallery.png'
 
 export const cardData = [
   {
@@ -32,5 +33,15 @@ export const cardData = [
     link: 'https://kettl96-sneakers-shop.netlify.app/',
     technology: 'React, React Router dom v6, Axios',
     github: 'https://github.com/kettl96/react-sneakers-shop'
+  }
+]
+
+export const otherData = [
+  {
+    id: 1,
+    name: 'Photo Gallery',
+    img: gallery,
+    text: `bshdsd dsdsd adsd asdad asdasd asdasd asdad sdasdsdad sdasdasd`,
+    link: 'https://kettl96.github.io/Photo-Gallery/',
   }
 ]

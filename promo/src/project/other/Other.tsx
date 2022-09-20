@@ -8,8 +8,15 @@ type OtherPropsType = {
 const Other: React.FC<OtherPropsType> = ({ opened, close }) => {
   return (
     <div className={`${s.allProject} ${opened ? s.visible : ''}`}>
+      <div className={s.cardsWrapper}>
+        <div>
+          <div>image</div>
+          <div>name</div>
+          <div>opisanie</div>
+        </div>
+      </div>
       <div className={s.viewBtn__wrapper}>
-        <button onClick={close}><span>View other</span><i></i></button>
+        <button onClick={close}><span>Hide</span><i></i></button>
       </div>
     </div>
 
