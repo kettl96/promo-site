@@ -1,3 +1,4 @@
+import { otherData } from '../projectData'
 import s from './Other.module.css'
 
 type OtherPropsType = {
@@ -9,11 +10,16 @@ const Other: React.FC<OtherPropsType> = ({ opened, close }) => {
   return (
     <div className={`${s.allProject} ${opened ? s.visible : ''}`}>
       <div className={s.cardsWrapper}>
-        <div>
-          <div>image</div>
-          <div>name</div>
-          <div>opisanie</div>
-        </div>
+        {otherData.map(card => {
+          return (
+            <div className={s.card}>
+              <div className={s.img}><img src={card.img} alt="" /></div>
+              <div className={s.name}>{card.name}</div>
+              <div className={s.text}>{card.text}</div>
+              <a className={s.link} href={card.link} >Visit</a>
+            </div>
+          )
+        })}
       </div>
       <div className={s.viewBtn__wrapper}>
         <button onClick={close}><span>Hide</span><i></i></button>

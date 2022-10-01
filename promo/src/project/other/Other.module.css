@@ -2,25 +2,95 @@
   z-index: 1;
   position: absolute;
   width: 100%;
-  height: 400px;
-  box-shadow: -10px 4px 24px rgb(0, 0, 0);
+  max-height: 647px;
+  box-shadow: 0px 0px 24px rgb(0, 0, 0);
   transition: 0.5s;
   visibility: hidden;
   background: white;
   margin-top: 10px;
+  /* border: 1px solid black; */
 }
 
 .visible {
   visibility: visible;
-  transform: translateY(-400px);
+  transform: translateY(-102.5%);
 }
 
 .cardsWrapper {
- margin: 20px;
+ /* margin: 30px 0; */
+ padding: 30px 0;
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ overflow-y: scroll;
 }
 
+.card {
+  margin: 15px 15px;
+  max-width: 22vw;
+  max-height: 520px;
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+  background-color: rgb(231, 231, 231);
+  cursor: default;
+}
+.img img {
 
+  width: 22vw;
+  height: 17vw;
+}
 
+.name {
+  font-size: 22px;
+  color: rgb(83, 83, 83);
+  font-family: 'Comic Neue', cursive;
+  padding: 5px 10px;
+}
+
+.text {
+  padding: 0 10px;
+  height: 63px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 15px auto;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: rgb(48, 48, 48);
+  width: 100px;
+  border-radius: 5px;
+  padding: 4px 0px;
+  letter-spacing: 1px;
+  box-shadow: 0 0 5px black;
+  transition: ease-in-out 0.4s;
+  font-family: 'Comic Neue', cursive;
+  font-weight: 600;
+}
+.link:hover {
+  letter-spacing: 4px;
+  box-shadow: 0 0 12px greenyellow;
+}
+
+@media (max-width: 1000px) {
+  
+  .card {
+    max-width: 40vw;
+  }
+  .img img {
+
+    width: 40vw;
+    height: 25vw;
+  }
+  .allProject {
+    max-height: 860px;
+  }
+  .visible {
+  transform: translateY(-101.5%);
+  }
+}
 
 
 .viewBtn__wrapper {
@@ -28,7 +98,7 @@
   justify-content: center;
   align-items: center;
   margin-top: -30px;
-  padding: 30px 0 40px 0;
+  padding: 20px 0 40px 0;
 }
 .viewBtn__wrapper button {
   position: relative;

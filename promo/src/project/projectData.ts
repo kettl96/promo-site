@@ -2,6 +2,8 @@ import rslang from '../assets/projects/rslang.png'
 import onlineStore from '../assets/projects/onlinestore.png'
 import sneakers from '../assets/projects/sneakers.png'
 import gallery from '../assets/projects/gallery.png'
+import music from '../assets/projects/music.png'
+import movie from '../assets/projects/movie.png'
 
 export const cardData = [
   {
@@ -41,7 +43,28 @@ export const otherData = [
     id: 1,
     name: 'Photo Gallery',
     img: gallery,
+    text: `Attractive neon gallery just using html, css, js and library Swiper. Just Scroll and Zoom it. `,
+    link: 'https://kettl96.github.io/Photo-Gallery/',
+  },
+  {
+    id: 2,
+    name: 'Music App',
+    img: music,
+    text: `bshdsd dsdsd adsd asdad asdasd asdasd asdad sdasdsdad sdasdasd`,
+    link: 'https://rolling-scopes-school.github.io/kettl96-JSFEPRESCHOOL/audio-player/',
+  },
+  {
+    id: 3,
+    name: 'Movie App',
+    img: movie,
+    text: `bshdsd dsdsd adsd asdad asdasd asdasd asdad sdasdsdad sdasdasd`,
+    link: 'https://rolling-scopes-school.github.io/kettl96-JSFEPRESCHOOL/movie-app/',
+  },
+  {
+    id: 4,
+    name: 'Music App',
+    img: gallery,
     text: `bshdsd dsdsd adsd asdad asdasd asdasd asdad sdasdsdad sdasdasd`,
     link: 'https://kettl96.github.io/Photo-Gallery/',
-  }
+  },
 ]
