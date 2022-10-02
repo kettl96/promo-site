@@ -4,6 +4,7 @@ import sneakers from '../assets/projects/sneakers.png'
 import gallery from '../assets/projects/gallery.png'
 import music from '../assets/projects/music.png'
 import movie from '../assets/projects/movie.png'
+import shelter from '../assets/projects/shelter.png'
 
 export const cardData = [
   {
@@ -62,9 +63,9 @@ export const otherData = [
   },
   {
     id: 4,
-    name: 'Music App',
-    img: gallery,
+    name: 'Shelter',
+    img: shelter,
     text: `bshdsd dsdsd adsd asdad asdasd asdasd asdad sdasdsdad sdasdasd`,
-    link: 'https://kettl96.github.io/Photo-Gallery/',
+    link: 'https://rolling-scopes-school.github.io/kettl96-JSFE2022Q1/shelter/pages/main/index.html',
   },
 ]

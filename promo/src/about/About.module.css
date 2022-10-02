@@ -3,3 +3,58 @@
   z-index: 5;
   height: 500px;
 }
+.aboutWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.imgWrapper {
+  position: relative;
+  overflow: hidden;
+  /* height: 500px; */
+  width: 350px;
+  display: flex;
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
+}
+.imgWrapper img {
+  height: 400px;
+  width: 350px; 
+  transition: ease-in-out 3s;
+  transform: translateX(-350px);
+}
+.img2{
+  position: relative;
+  z-index: 2;
+}
+.img3{
+  position: relative;
+  z-index: 3;
+}
+.titleWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0 20px 0;
+  padding-top: 25px;
+  cursor: default;
+}
+.titleLine {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.295);
+  margin-top: 12px;
+  width: 600px;
+  position: absolute;
+}
+
+.title {
+  z-index: 5;
+  color: rgb(99, 99, 99);
+  font-weight: 600;
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+  height: 30px;
+  padding: 0 10px;
+}
+.infoWrapper {
+  width: 400px;
+}

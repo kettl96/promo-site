@@ -12,7 +12,7 @@ const Other: React.FC<OtherPropsType> = ({ opened, close }) => {
       <div className={s.cardsWrapper}>
         {otherData.map(card => {
           return (
-            <div className={s.card}>
+            <div className={s.card} key={card.name}>
               <div className={s.img}><img src={card.img} alt="" /></div>
               <div className={s.name}>{card.name}</div>
               <div className={s.text}>{card.text}</div>
