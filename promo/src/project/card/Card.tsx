@@ -1,4 +1,4 @@
-import React, { LegacyRef, MouseEvent, useRef } from 'react';
+import React, { LegacyRef, MouseEvent, RefObject, useRef } from 'react';
 import s from './Card.module.css'
 import { gsap } from "gsap";
 import gitImg from '../../assets/github.png'
@@ -45,7 +45,7 @@ const Card: React.FC<CardPropsType> = ({ num, name, img, text, link, tech, git }
   }, [x, y])
 
   // const boxRef = useRef() as LegacyRef<HTMLDivElement> | undefined;
-  const boxRef = useRef() as any;
+  const boxRef = useRef() as RefObject<HTMLDivElement> ;
   const moveImg = (e: MouseEvent<HTMLDivElement>): void => {
     setX(e.pageX);
     setY(e.pageY);

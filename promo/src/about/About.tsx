@@ -3,6 +3,7 @@ import s from './About.module.css'
 import me1 from '../assets/me/me1.jpg'
 import me2 from '../assets/me/me2.jpg'
 import me3 from '../assets/me/me3.jpg'
+import Work from './work/Work';
 
 const About = () => {
   const [count, setCount] = React.useState(0)
@@ -31,6 +32,7 @@ const About = () => {
     }, 10000)
     return () => clearInterval(interval)
   })
+
   return (
     <div className={s.wrapper}>
       <div className={s.titleWrapper}>
@@ -44,13 +46,21 @@ const About = () => {
           <img src={me3} alt="" className={`${s.img3} `} style={{ transform: `translateX(${distanceRight}px)` }} />
         </div>
         <div className={s.infoWrapper}>
-          <div>
-            Hello! My name is Brittany and I enjoy creating things that live on the internet.
-            My interest in web development started back in 2012 when I decided to try editing custom
-            Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+          <div className={s.text}>
+            Hello! My name is Alexander and I enjoy creating things that live on the internet.
+            My interest in web development started back in 2020 when I received a book 'JS for kids'.
+            After that i'm start learning HTML & CSS!
           </div>
+          <ul>
+            <li>prefer a healthy lifestyle</li>
+            <li>can find the optimal way from  difficult situation in short time period</li>
+            <li>visited more than 70 cities</li>
+            <li>ever positive and never negative</li>
+            <li>genjutsu master</li>
+          </ul>
         </div>
       </div>
+      <Work />
     </div>
   )
 }
