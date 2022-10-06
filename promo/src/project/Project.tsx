@@ -12,7 +12,7 @@ const Project = () => {
   }
 
   return (
-    <div className={s.wrapper}>
+    <div className={s.wrapper} id={'portfolio'}>
       <div className={s.titleWrapper}>
         <div className={s.title}>SOME OF MY LATEST PROJECT</div>
         <div className={s.titleLine}></div>

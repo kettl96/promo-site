@@ -2,11 +2,12 @@
   position: relative;
   z-index: 5;
   /* height: 400px; */
-  background-color: rgb(43, 43, 43);
+  background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(43,43,43,1) 97%);
   padding-bottom: 50px;
   display: flex;
   justify-content: center;
-  min-height: 400px;
+  min-height: 300px;
 }
 
 .buttons {
@@ -51,7 +52,7 @@
   justify-content: space-around;
 }
 .edu__card {
-  background-color: rgb(87, 87, 87);
+  background-color: rgb(51, 51, 51);
   margin: 10px;
   padding: 10px 10px 20px 10px;
   width: 300px;
@@ -105,4 +106,48 @@
 .freelance div:last-child {
   line-height: 30px;
   color: rgb(236, 236, 236);
+}
+/*  */
+.exoLink {
+  font-size: 18px;
+}
+.exoLink a {
+  font-size: 20px;
+  color: rgb(179, 230, 77);
+  letter-spacing: 1.5px;
+  display: inline;
+  margin: 0 20px;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+    font-weight: 600;
+}
+.exoLink a:hover {
+  /* letter-spacing: normal; */
+  letter-spacing: 1.5px;
+  transform: scale(1.1);
+}
+.exoLink a:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+.exoLink a:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    height: 2px;
+    background-color: white;
+    transition: width 0.5s;
 }

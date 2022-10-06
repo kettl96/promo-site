@@ -65,7 +65,7 @@ const Work = () => {
       }
       {display === 'Exosoft' &&
         <div className={s.contentWrapper}>
-          exo
+          <div className={s.exoLink}>Frontend Developer<a href="https://exosoft.dev/">@ Exosoft</a></div>
         </div>
       }
     </div>

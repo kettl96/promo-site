@@ -11,8 +11,8 @@ const Header = () => {
         <div className={s.logoText}>AN</div>
       </div>
       <div className={s.links}>
-        <a href="ghgh" className={s.link}>About</a>
-        <a href="ghgh" className={s.link}>Portfolio</a>
+        <a href="#about" className={s.link}>About</a>
+        <a href="#portfolio" className={s.link}>Portfolio</a>
         <a href="/resume.pdf" target='_blank' rel='noopener noreferrer' className={s.link}>Resume</a>
       </div>
       <div className={s.socialLinks}>
