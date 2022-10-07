@@ -35,31 +35,34 @@ const About = () => {
 
   return (
     <div className={s.wrapper} id={'about'}>
-      <div className={s.titleWrapper}>
-        <div className={s.title}>About me</div>
-        <div className={s.titleLine}></div>
-      </div>
-      <div className={s.aboutWrapper}>
-        <div className={s.imgWrapper}>
-          <img src={me2} alt="" className={`${s.img2} `} style={{ transform: `translateX(${distanceLeft}px)` }} />
-          <img src={me1} alt="" className={`${s.img1}`} />
-          <img src={me3} alt="" className={`${s.img3} `} style={{ transform: `translateX(${distanceRight}px)` }} />
+      <div className={s.imgBack}></div>
+      <div className={s.back}></div>
+        <div className={s.titleWrapper}>
+          <div className={s.titleLine1}></div>
+          <div className={s.title}>About me</div>
+          <div className={s.titleLine2}></div>
         </div>
-        <div className={s.infoWrapper}>
-          <div className={s.text}>
-            Hello! My name is Alexander and I enjoy creating things that live on the internet.
-            My interest in web development started back in 2020 when I received a book 'JS for kids'.
-            After that i'm start learning HTML & CSS!
+        <div className={s.aboutWrapper}>
+          <div className={s.imgWrapper}>
+            <img src={me2} alt="" className={`${s.img2} `} style={{ transform: `translateX(${distanceLeft}px)` }} />
+            <img src={me1} alt="" className={`${s.img1}`} />
+            <img src={me3} alt="" className={`${s.img3} `} style={{ transform: `translateX(${distanceRight}px)` }} />
           </div>
-          <ul>
-            <li>prefer a healthy lifestyle</li>
-            <li>can find the optimal way from  difficult situation in short time period</li>
-            <li>visited more than 70 cities</li>
-            <li>ever positive and never negative</li>
-            <li>genjutsu master</li>
-          </ul>
+          <div className={s.infoWrapper}>
+            <div className={s.text}>
+              Hello! My name is Alexander and I enjoy creating things that live on the internet.
+              My interest in web development started back in 2020 when I received a book 'JS for kids'.
+              After that i'm start learning HTML & CSS!
+            </div>
+            <ul>
+              <li>prefer a healthy lifestyle</li>
+              <li>can find the optimal way from  difficult situation in short time period</li>
+              <li>visited more than 70 cities</li>
+              <li>ever positive and never negative</li>
+              <li>genjutsu master</li>
+            </ul>
+          </div>
         </div>
-      </div>
       <Work />
     </div>
   )

@@ -13,11 +13,11 @@ const Chat = () => {
         <div>Let's have a</div>
         <div className={s.btn}>
           <a href="mailto:kettl110e4@gmail.com" target='_blank' rel="noreferrer">
-
             <button>chat</button>
           </a>
         </div>
       </div>
+      <a href="#top" className={s.top}><div>&#8918;</div></a>
     </div>
   )
 }

@@ -5,7 +5,7 @@ import mailImg from '../assets/mail.png'
 
 const Header = () => {
   return (
-    <header className={s.header}>
+    <header className={s.header} id={'top'}>
       <div className={s.logoWrapper}>
         <div className={s.logo}></div>
         <div className={s.logoText}>AN</div>

@@ -65,7 +65,21 @@ const Work = () => {
       }
       {display === 'Exosoft' &&
         <div className={s.contentWrapper}>
-          <div className={s.exoLink}>Frontend Developer<a href="https://exosoft.dev/">@ Exosoft</a></div>
+          <div className={s.exoLink}>Frontend Developer
+            <a href="https://exosoft.dev/" target='_blank' rel="noreferrer">@ Exosoft</a>
+          </div>
+          <div className={s.date}>March 2022 - Present</div>
+          <div className={s.description}>
+            <div>
+              - Project: <br />
+              An application for a large equipment logistics rental company. His movements.
+              Project calendar. A framework system for alerting equipment linked to an application and notifying customers.
+            </div>
+            <div className={s.tech}>
+              - Environment: <br />
+              React, Redux Toolkit, Redux Persist, TypeScript, Mui, React Hook Form, Eslint, Axios, MUI
+            </div>
+          </div>
         </div>
       }
     </div>

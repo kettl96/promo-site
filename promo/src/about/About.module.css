@@ -1,7 +1,28 @@
 .wrapper {
   position: relative;
   z-index: 5;
-  background-color: rgb(61, 61, 61);
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+.imgBack {
+  background-image: url('../assets/aboutBack.png');
+  background-size: cover;
+  position: absolute;
+  height: 62%;
+  width: 102%;
+  z-index: -1;
+  opacity: 0.35;
+  left: -9px;
+}
+.back {
+  position: absolute;
+  height: 62%;
+  min-width: 900px;
+  background-color: rgba(0, 0, 0, 0.52);
+  z-index: -1;
+  box-shadow: 0 0 160px black;
+  left:50%;
+  transform:translate(-50%);
 }
 .aboutWrapper {
   width: 100%;
@@ -19,8 +40,8 @@
 .imgWrapper {
   position: relative;
   overflow: hidden;
-  /* height: 500px; */
   width: 350px;
+  height: 400px;
   display: flex;
   margin: 20px;
   border: none;
@@ -48,10 +69,18 @@
   padding-top: 25px;
   cursor: default;
 }
-.titleLine {
+.titleLine1 {
   border-bottom: 2px solid rgb(255, 255, 255);
   margin-top: 12px;
-  width: 600px;
+  margin-left: -330px;
+  width: 220px;
+  position: absolute;
+}
+.titleLine2 {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  margin-top: 12px;
+  margin-right: -330px;
+  width: 220px;
   position: absolute;
 }
 
@@ -60,7 +89,6 @@
   color: rgb(255, 255, 255);
   font-weight: 600;
   font-size: 18px;
-  background-color: rgb(61, 61, 61);
   height: 30px;
   padding: 0 10px;
 }

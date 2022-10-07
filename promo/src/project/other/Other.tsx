@@ -16,7 +16,9 @@ const Other: React.FC<OtherPropsType> = ({ opened, close }) => {
               <div className={s.img}><img src={card.img} alt="" /></div>
               <div className={s.name}>{card.name}</div>
               <div className={s.text}>{card.text}</div>
-              <a className={s.link} href={card.link} >Visit</a>
+              <a className={s.link} href={card.link} target='_blank' rel="noreferrer" >
+                Visit
+              </a>
             </div>
           )
         })}

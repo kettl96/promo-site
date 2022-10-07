@@ -3,11 +3,11 @@
   z-index: 5;
   /* height: 400px; */
   background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(43,43,43,1) 97%);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(0, 0, 0) 100%);
   padding-bottom: 50px;
   display: flex;
   justify-content: center;
-  min-height: 300px;
+  min-height: 310px;
 }
 
 .buttons {
@@ -150,4 +150,15 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(43,43,43,1) 97%);
     height: 2px;
     background-color: white;
     transition: width 0.5s;
+}
+.description {
+  padding: 10px 15px;
+  
+}
+.date {
+  margin: 15px 0;
+}
+.tech {
+  margin: 15px 0 0 0;
+  /* color: rgb(34, 34, 34); */
 }
