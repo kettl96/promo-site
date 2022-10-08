@@ -17,7 +17,7 @@ const Chat = () => {
           </a>
         </div>
       </div>
-      <a href="#top" className={s.top}><div>&#8918;</div></a>
+      <a href="#top" className={s.top}><div>&#10148;</div></a>
     </div>
   )
 }

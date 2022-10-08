@@ -60,6 +60,7 @@
   top: -2px;
   left: 6px;
   width: 40px;
+  opacity: 0.5;
 }
 @keyframes myOrbit {
   0% {
@@ -81,12 +82,12 @@
 }
 @keyframes up {
   0% {
-    transform: rotate(90deg) translateX(0) scale(0.9);    
+    transform: rotate(-90deg) translateX(0) scale(0.8);    
   }
   50% {
-    transform: rotate(90deg) translateX(-5px) scale(0.9);
+    transform: rotate(-90deg) translateX(-5px) scale(0.8);
   }
   100% {
-    transform: rotate(90deg) translateX(0px) scale(0.9);
+    transform: rotate(-90deg) translateX(0px) scale(0.8);
   }
 }

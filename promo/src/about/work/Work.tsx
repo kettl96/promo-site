@@ -8,6 +8,7 @@ const Work = () => {
   const click = (e: any) => {
     const element = e.currentTarget as HTMLDivElement
     const button = e.target as HTMLButtonElement
+    if(button.nodeName === 'DIV') return
     element.childNodes.forEach((el: any) => el.classList.remove('active'))
     button.classList.add('active')
     setDisplay(button.innerHTML)
