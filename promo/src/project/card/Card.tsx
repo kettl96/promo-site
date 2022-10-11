@@ -1,4 +1,4 @@
-import React, { LegacyRef, MouseEvent, RefObject, useRef } from 'react';
+import React, { MouseEvent, RefObject, useRef } from 'react';
 import s from './Card.module.css'
 import { gsap } from "gsap";
 import gitImg from '../../assets/github.png'
