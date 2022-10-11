@@ -94,6 +94,7 @@
 }
 .infoWrapper {
   width: 400px;
+  cursor: default;
 }
 li {
   font-family: 'Comic Neue', cursive;

@@ -11,8 +11,8 @@ export const cardData = [
     id: 1,
     name: 'RS Lang',
     img: rslang,
-    text: `A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. 
-    Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.`,
+    text: `A web app for learning foreign words, including an electronic textbook with a database of words to learn, 
+    mini-games for using them, statistics pages for building individual progress.`,
     link: 'https://rslang-vanya1000.netlify.app/',
     technology: 'React, Redux Toolkit, TS, MUI',
     github: 'https://github.com/Vanya1000/rslang'
@@ -21,8 +21,8 @@ export const cardData = [
     id: 2,
     name: 'Online-Store',
     img: onlineStore,
-    text: `A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. 
-    Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.`,
+    text: `A training project on creating an online store of any subject, where goods will have the following functionality: 
+    filtering, sorting, searching, adding to cart.`,
     link: 'https://kettl96-online-store.netlify.app/',
     technology: 'React, TS,',
     github: 'https://github.com/kettl96/rsSchool-Repo'
@@ -31,8 +31,8 @@ export const cardData = [
     id: 3,
     name: 'Sneakers-Shop',
     img: sneakers,
-    text: `A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. 
-    Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.`,
+    text: `A training project in which data is downloaded from 
+    the server and pages with selected products and a list of orders are implemented.`,
     link: 'https://kettl96-sneakers-shop.netlify.app/',
     technology: 'React, React Router dom v6, Axios',
     github: 'https://github.com/kettl96/react-sneakers-shop'
@@ -51,21 +51,22 @@ export const otherData = [
     id: 2,
     name: 'Music App',
     img: music,
-    text: `bshdsd dsdsd adsd asdad asdasd asdasd asdad sdasdsdad sdasdasd`,
+    text: `This app is created using only JS. Listen and enjoy`,
     link: 'https://rolling-scopes-school.github.io/kettl96-JSFEPRESCHOOL/audio-player/',
   },
   {
     id: 3,
     name: 'Movie App',
     img: movie,
-    text: `bshdsd dsdsd adsd asdad asdasd asdasd asdad sdasdsdad sdasdasd`,
+    text: `App using kinopoisk API, so you can find all information about you favorite film and see 
+    his rating.`,
     link: 'https://rolling-scopes-school.github.io/kettl96-JSFEPRESCHOOL/movie-app/',
   },
   {
     id: 4,
     name: 'Shelter',
     img: shelter,
-    text: `bshdsd dsdsd adsd asdad asdasd asdasd asdad sdasdsdad sdasdasd`,
+    text: `Web-page for shelter, were you can help pets, or you can find there a new friend.`,
     link: 'https://rolling-scopes-school.github.io/kettl96-JSFE2022Q1/shelter/pages/main/index.html',
   },
 ]
