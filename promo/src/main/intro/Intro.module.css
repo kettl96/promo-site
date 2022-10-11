@@ -1,0 +1,48 @@
+.intro {
+  margin: 6.5% 0 0 9%;
+  cursor: default;
+}
+
+.hello {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.74);
+  /* color: rgb(163, 240, 48); */
+  text-shadow: 1px 0px 1px rgb(163, 240, 48);
+  margin: 0 0 20px 0;
+}
+
+.name {
+  font-family: 'Lobster', cursive;
+  font-size: 68px;
+  color: #1d1d1d;
+}
+
+.surname {
+  font-family: 'Lobster', cursive;
+  font-size: 68px;
+  margin: -5px 0 45px 170px;
+  color: #1d1d1de0;
+
+}
+
+.description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #414141;
+  width: 530px;
+}
+
+.description span {
+  font-size: 20px;
+  padding: 5px 5px 2px 30px;
+  margin-left: -30px;
+  background-color: #66ff0069;
+  border-radius: 2px;
+}
+.description span:last-child {
+  font-size: 18px;
+  padding: 5px 30px 3px 4px;
+  margin-left: 0px;
+}
