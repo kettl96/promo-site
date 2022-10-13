@@ -16,6 +16,7 @@
   font-family: 'Lobster', cursive;
   font-size: 68px;
   color: #1d1d1d;
+  animation: name 2.5s ease-in-out;
 }
 
 .surname {
@@ -23,7 +24,7 @@
   font-size: 68px;
   margin: -5px 0 45px 170px;
   color: #1d1d1de0;
-
+  animation: surname 2.5s ease-in-out;
 }
 
 .description {
@@ -32,6 +33,7 @@
   line-height: 30px;
   color: #414141;
   width: 530px;
+  animation: description 3s ease-out;
 }
 
 .description span {
@@ -45,4 +47,42 @@
   font-size: 18px;
   padding: 5px 30px 3px 4px;
   margin-left: 0px;
+}
+
+@keyframes name {
+  0% {
+    opacity: 0;
+    transform:  translateX(400px) ;    
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-45px) ;
+  }
+  100% {
+    transform:  translateX(0px);
+  }
+}
+@keyframes surname {
+  0% {
+    opacity: 0;
+    transform:  translateX(-400px) ;    
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(45px) ;
+  }
+  100% {
+    transform:  translateX(0px);
+  }
+}
+@keyframes description {
+  0% {
+  transform: rotateX(90deg) ;
+  }
+  60% {
+    transform: rotateX(90deg);    
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
 }

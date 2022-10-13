@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Work.module.css'
 import arrow from '../../assets/arrow.png'
+import rs from '../../assets/logo-rs.svg'
 
 const Work = () => {
   const [display, setDisplay] = React.useState('Education')
@@ -8,7 +9,7 @@ const Work = () => {
   const click = (e: any) => {
     const element = e.currentTarget as HTMLDivElement
     const button = e.target as HTMLButtonElement
-    if(button.nodeName === 'DIV') return
+    if (button.nodeName === 'DIV') return
     element.childNodes.forEach((el: any) => el.classList.remove('active'))
     button.classList.add('active')
     setDisplay(button.innerHTML)
@@ -25,6 +26,7 @@ const Work = () => {
         <div className={s.contentWrapper}>
           <div className={s.education}>
             <div className={s.edu__card}>
+              <img className={s.rsImg} src={rs} alt="" />
               <div className={s.title}>The Rolling Scopes School</div>
               <div className={s.subtitle}>JavaScript Development</div>
               <div>
@@ -37,6 +39,7 @@ const Work = () => {
               </a>
             </div>
             <div className={s.edu__card}>
+              <img className={s.rsImg} src={rs} alt="" />
               <div className={s.title}>The Rolling Scopes School</div>
               <div className={s.subtitle}>JavaScript Development</div>
               <div>
