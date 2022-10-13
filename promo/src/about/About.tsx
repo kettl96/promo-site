@@ -31,7 +31,7 @@ const About = () => {
       }
     }, 10000)
     return () => clearInterval(interval)
-  })
+  },[count])
 
   return (
     <div className={s.wrapper} id={'about'}>
