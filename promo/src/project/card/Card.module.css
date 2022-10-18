@@ -11,7 +11,7 @@
 
 .imgProject {
   margin: 20px;
-  box-shadow: 0px 0px 12px rgba(41, 241, 0, .85);
+  box-shadow: 0px 0px 12px rgba(62, 255, 23, 0.6);
   width: 50vw;
   transition: ease-in-out 0.4s;
   position: relative;
@@ -64,6 +64,7 @@
 .tech {
   margin: 0 3px;
   font-family: 'Comic Neue', cursive;
+  font-weight: 600;
   color: rgb(131, 131, 131);
 }
 

@@ -1,3 +1,3 @@
 # promo-site
 
-https://nechaenkov.netlify.app/
+https://nechaenkov.com
