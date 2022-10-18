@@ -7,7 +7,7 @@ const Chat = () => {
     <div className={s.wrapper}>
       <div>
         <img src={smoke} alt="" className={s.smoke} />
-        <img src={coffee} alt="" />
+        <img src={coffee} alt="" className={s.coffee}/>
       </div>
       <div className={s.title}>
         <div>Let's have a</div>
@@ -17,7 +17,6 @@ const Chat = () => {
           </a>
         </div>
       </div>
-      <a href="#top" className={s.top}><div>&#10148;</div></a>
     </div>
   )
 }

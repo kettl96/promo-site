@@ -17,7 +17,6 @@ body {
 
 ::-webkit-scrollbar {
   width: 0px;
-  /* background: transparent;  */
 }
 .active {
   background: yellowgreen !important;
