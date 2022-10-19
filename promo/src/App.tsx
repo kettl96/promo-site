@@ -5,29 +5,18 @@ import Footer from './footer/Footer';
 import Header from './header/Header';
 import Main from './main/Main';
 import Project from './project/Project';
+import Burger from './burger/Burger';
 
 function App() {
-  const [loading, setLoading] = React.useState(true);
-  const spinner = document.getElementById("spinner");
-  if (spinner) {
-    setTimeout(() => {
-      spinner.style.display = "none";
-      setLoading(false);
-    }, 1000);
-  }
-
   return (
     <>
-      {!loading &&
-        <div>
-          <Header />
-          <Main />
-          <Project />
-          <About />
-          <Chat />
-          <Footer />
-        </div>
-      }
+      <Burger />
+      <Header />
+      <Main />
+      <Project />
+      <About />
+      <Chat />
+      <Footer />
     </>
   );
 }
