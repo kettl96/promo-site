@@ -76,7 +76,7 @@ const Work = () => {
           <div className={s.description}>
             <div>
               - Project: <br />
-              An application for a large equipment logistics rental company. His movements.
+              An application for a large equipment logistics rental company. It's movements.
               Project calendar. A framework system for alerting equipment linked to an application and notifying customers.
             </div>
             <div className={s.tech}>

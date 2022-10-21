@@ -55,12 +55,12 @@ const About = () => {
         <div className={s.infoWrapper}>
           <div className={s.text}>
             Hello! My name is Alexander and I enjoy creating things that live on the internet.
-            My interest in web development started back in 2020 when I received a book 'JS for kids'.
-            After that i'm start learning HTML & CSS!
+            My interest in web development has started back in 2020 when I received a book 'JS for kids'.
+            After that i started to learn HTML & CSS!
           </div>
           <ul>
             <li>prefer a healthy lifestyle</li>
-            <li>can find the optimal way from  difficult situation in short time period</li>
+            <li>can find the optimal way to solve difficult situation in short period</li>
             <li>visited more than 70 cities</li>
             <li>ever positive and never negative</li>
             <li>genjutsu master</li>

@@ -15,8 +15,8 @@ function App() {
       <Main />
       <Project />
       <About />
-      <Chat />
-      <Footer />
+      {/* <Chat /> */}
+      {/* <Footer /> */}
     </>
   );
 }

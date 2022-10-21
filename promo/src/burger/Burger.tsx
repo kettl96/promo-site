@@ -1,5 +1,5 @@
 import s from './Burger.module.css'
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Social from './../header/Social';
 
 const Burger = () => {
