@@ -19,22 +19,22 @@ import material from '../../assets/technology/material.png'
 const Technology = () => {
   return (
     <div className={s.techImg}>
-        <img src={react} alt=""  className={s.techBlock}/>
-        <img src={redux} alt=""  className={s.techBlock}/>
-        <img src={js} alt=""  className={s.techBlock}/>
-        <img src={ts} alt=""  className={s.techBlock}/>
-        <img src={html} alt=""  className={s.techBlock}/>
-        <img src={css} alt=""  className={s.techBlock}/>
-        <img src={webpack} alt=""  className={s.techBlock}/>
-        <img src={git} alt=""  className={s.techBlock}/>
-        <img src={sass} alt=""  className={s.techBlock}/>
-        <img src={ant} alt=""  className={s.techBlock}/>
-        <img src={node} alt=""  className={s.techBlock}/>
-        <img src={axios} alt=""  className={s.techBlock}/>
-        <img src={rest} alt=""  className={s.techBlock}/>
-        <img src={eslint} alt=""  className={s.techBlock}/>
-        <img src={material} alt=""  className={s.techBlock}/>
-      </div>
+      <img src={react} alt="" className={s.techBlock} />
+      <img src={redux} alt="" className={s.techBlock} />
+      <img src={js} alt="" className={s.techBlock} />
+      <img src={ts} alt="" className={s.techBlock} />
+      <img src={html} alt="" className={s.techBlock} />
+      <img src={css} alt="" className={s.techBlock} />
+      <img src={webpack} alt="" className={s.techBlock} />
+      <img src={git} alt="" className={s.techBlock} />
+      <img src={sass} alt="" className={s.techBlock} />
+      <img src={ant} alt="" className={s.techBlock} />
+      <img src={node} alt="" className={s.techBlock} />
+      <img src={axios} alt="" className={s.techBlock} />
+      <img src={rest} alt="" className={s.techBlock} />
+      <img src={eslint} alt="" className={s.techBlock} />
+      <img src={material} alt="" className={s.techBlock} />
+    </div>
   )
 }
 

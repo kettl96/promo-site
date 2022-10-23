@@ -11,7 +11,7 @@ import Intro from './intro/Intro'
 const Main = () => {
   return (
     <div className={s.mainWrapper}>
-      <div>
+      <div className={s.imgWrapper}>
         <img src={mainImg} alt="" className={s.mainImg} />
         <img src={codeImg} alt="" className={s.codeImg} />
         <img src={codeImg2} alt="" className={s.codeImg2} />

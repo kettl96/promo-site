@@ -33,7 +33,7 @@ const Work = () => {
                 Semi-annual JavaScript course hosted by The Rolling Scopes School community.
                 Pre-School course.
               </div>
-              <a href="https://app.rs.school/certificate/vfkrqqme">
+              <a href="https://app.rs.school/certificate/vfkrqqme" target='_blank' rel="noreferrer">
                 To certificate
                 <img src={arrow} alt="" />
               </a>
@@ -46,7 +46,7 @@ const Work = () => {
                 Semi-annual JavaScript course hosted by The Rolling Scopes School community.
                 Main course.
               </div>
-              <a href="https://app.rs.school/certificate/ixus1o9z">
+              <a href="https://app.rs.school/certificate/ixus1o9z" target='_blank' rel="noreferrer">
                 To certificate
                 <img src={arrow} alt="" />
               </a>
@@ -76,7 +76,7 @@ const Work = () => {
           <div className={s.description}>
             <div>
               - Project: <br />
-              An application for a large equipment logistics rental company. His movements.
+              An application for a large equipment logistics rental company. It's movements.
               Project calendar. A framework system for alerting equipment linked to an application and notifying customers.
             </div>
             <div className={s.tech}>

@@ -8,6 +8,7 @@
   overflow: hidden;
   position: relative;
   cursor: default;
+  margin-bottom: -50px;
 }
 .allLinks {
   display: flex;
@@ -33,8 +34,8 @@
   text-decoration: none;
   color: black;
   font-size: 30px;
-  right: 2px;
-  bottom: 5px;
+  right: 0px;
+  bottom: 3px;
   border-radius: 50%;
   background-color: rgb(243, 243, 243);
   box-shadow: 0 0 5px black;
@@ -49,12 +50,12 @@
 }
 @keyframes up {
   0% {
-    transform: rotate(-90deg) translateX(0) scale(0.8);    
+    transform: rotate(-90deg) translateX(0) scale(0.7);    
   }
   50% {
-    transform: rotate(-90deg) translateX(-5px) scale(0.8);
+    transform: rotate(-90deg) translateX(-4px) scale(0.7);
   }
   100% {
-    transform: rotate(-90deg) translateX(0px) scale(0.8);
+    transform: rotate(-90deg) translateX(0px) scale(0.7);
   }
 }

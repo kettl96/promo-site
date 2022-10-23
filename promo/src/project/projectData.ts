@@ -24,7 +24,7 @@ export const cardData = [
     text: `A training project on creating an online store of any subject, where goods will have the following functionality: 
     filtering, sorting, searching, adding to cart.`,
     link: 'https://kettl96-online-store.netlify.app/',
-    technology: 'React, TS,',
+    technology: 'React, TS',
     github: 'https://github.com/kettl96/rsSchool-Repo'
   },
   {
