@@ -94,6 +94,9 @@
    margin-top: 0;
    transform: translateX(15%);
   }
+  .description {
+    color: black;
+  }
 }
 @media (max-width: 760px) {
   .intro {
@@ -158,5 +161,17 @@
   }
   .description span:last-child {
     margin-left: 35%;
+  }
+}
+@media (max-width: 320px) {
+  .name {
+    width: 200px;
+    font-size: 55px;
+  }
+  .surname {
+    font-size: 50px;
+  }
+  .description {
+    width: 90vw;
   }
 }

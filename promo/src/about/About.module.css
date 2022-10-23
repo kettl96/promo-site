@@ -5,8 +5,6 @@
   overflow: hidden;
 }
 .videoBack {  
-  /* background-image: url('../assets/aboutBack.png'); */
-  /* background-size: cover; */
   position: absolute;
   height: 560px;
   width: 100%;
@@ -31,7 +29,6 @@
   transform:translate(-50%);
 }
 .backMin {
-  /* background-color: red; */
   background-color: rgba(0, 0, 0, 0.8);
   filter: blur(10px);
   width: 775px;
@@ -111,9 +108,74 @@
   width: 400px;
   cursor: default;
 }
-li {
+.infoWrapper li {
   font-family: 'Comic Neue', cursive;
   color: rgb(214, 214, 214);
   margin: 6px 10px;
   font-size: 22px;
+}
+@media (max-width: 766px) {
+  .aboutWrapper {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .videoBack {  
+   height: 950px;
+  }
+  .videoBack video {
+    object-fit: fill;    
+  }
+  .back {
+    width: 70vw;
+    min-width: 400px;
+    box-shadow: 0 0 50px black;
+    left:50%;
+    top: 80px;
+    height: 820px;
+    border-radius: 10px;
+  }
+  .backMin {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 51vw;
+    min-width: 370px;
+    height: 650px;
+    transform: translate( -50%, 185px);
+  }
+}
+@media (max-width: 440px) {
+  .text {
+    text-align: center;
+    font-size: 16px;
+    width: 90%;
+    margin: 15px auto 30px auto;
+  }
+  .infoWrapper li {
+    font-size: 18px;
+  }
+  .backMin {
+    height: 600px;
+  }
+  .imgWrapper {
+    width: 320px;
+  }
+}
+@media (max-width: 370px) {
+  .text {
+    width: 70%;
+    margin: 15px auto 30px auto;
+  }
+  .infoWrapper li {
+    margin: 10px auto;
+    width: 70%;
+    font-size: 18px;
+  }
+  .infoWrapper ul {
+    padding-left: 22px;
+  }
+  .backMin {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .imgWrapper {
+    width: 300px;
+  }
 }

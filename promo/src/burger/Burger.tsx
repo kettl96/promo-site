@@ -5,6 +5,12 @@ import Social from './../header/Social';
 const Burger = () => {
   const [isOpen, setOpen] = useState(false)
 
+  const openBurger = () => setOpen(!isOpen)
+
+  const linkHandler = (e: any) => {
+    if (e.target.nodeName === 'A') setOpen(false)
+  }
+
   useEffect(() => {
     const resize = () => {
       if (document.documentElement.clientWidth > 740) setOpen(false)
@@ -13,7 +19,10 @@ const Burger = () => {
     return () => window.removeEventListener('resize', resize)
   }, [])
 
-  const openBurger = () => setOpen(!isOpen)
+  useEffect(() => {
+    const bodyElement: HTMLElement | null = document.querySelector('body')
+    if (bodyElement) bodyElement.style.overflow = isOpen ? 'hidden' : 'scroll'
+  }, [isOpen])
 
   return (
     <div>
@@ -21,7 +30,7 @@ const Burger = () => {
         <span></span>
       </div>
       {isOpen &&
-        <div className={s.wrapper}>
+        <div className={s.wrapper} onClick={linkHandler}>
           <div className={s.allLinks}>
             <div className={s.up}>
               <div className={s.title}>Links</div>

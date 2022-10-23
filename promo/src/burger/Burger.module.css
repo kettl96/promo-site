@@ -43,13 +43,13 @@
   z-index: 10;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.88);
   animation: wrapper .5s ease-out;
 }
 .allLinks {
   position: absolute;
   top: 30vh;
-  left: 45vw;
+  left: 40vw;
   font-size: 20px;
   transform: scale(1.2);
 }
@@ -117,3 +117,8 @@
   display: none;
  }
 }
+@media (max-width: 420px) {
+  .allLinks {
+    left: 34vw;
+  }
+ }
