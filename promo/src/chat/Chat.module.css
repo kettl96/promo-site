@@ -9,17 +9,18 @@
 .wrapper img {
   transform: rotate(-10deg);
   width: 130px;
-  /* transition: ease-in-out 1s; */
 }
 .coffee:hover {
   animation: shake 1.5s linear infinite;
 }
 .title {
+  position: relative;
   margin: 0 10px 0 50px;
   align-items: center;
   display: flex;
   font-size: 52px;
   font-family: 'Comic Neue', cursive;
+  cursor: default;
 }
 .btn {
   border: 2px solid black;
@@ -74,5 +75,44 @@
   }
   100% {
     transform: rotate(-10deg) translate(0, 0);
+  }
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    height: 170px;
+    padding-top: 10px;
+  }
+  .title {
+    position: relative;
+    z-index: 3;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.795);
+    margin: 65px 0 0 0;
+    height: 50px;
+  }
+  .smoke {
+    left: 20vw;
+  }
+  .coffee {
+    position: absolute;
+    left: 19vw;
+    margin-top: 17px;
+    z-index: 1;
+  }
+}
+@media (max-width: 410px) {
+  .title {
+    font-size: 10vw;
+  }
+  .btn {
+    transform: scale(0.8);
+    margin-left: 0px;
+  }
+  .coffee {
+    margin-top: 12px;
+    left: 13vw;
+  }
+  .smoke {
+    left: 13vw;
   }
 }

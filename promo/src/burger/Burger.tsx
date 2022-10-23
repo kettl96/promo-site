@@ -21,7 +21,7 @@ const Burger = () => {
 
   useEffect(() => {
     const bodyElement: HTMLElement | null = document.querySelector('body')
-    if (bodyElement) bodyElement.style.overflow = isOpen ? 'hidden' : 'scroll'
+    if (bodyElement) bodyElement.style.overflowY = isOpen ? 'hidden' : 'scroll'
   }, [isOpen])
 
   return (
