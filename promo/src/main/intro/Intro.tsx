@@ -7,7 +7,7 @@ const Intro = () => {
       <div className={s.name}>Alexander</div>
       <div className={s.surname}>Nechaenkov.</div>
       <div className={s.description}>
-        <span> Frontend developer.</span> Huge fan of exploration. <br />
+        <span> Frontend developer.</span> Big fan of exploration. <br />
         Never stop on something you’ve already achieved, keep studying. <br />
         Ever positive and never negative. <span> Please enjoy;&#41;</span>
       </div>
