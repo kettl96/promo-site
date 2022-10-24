@@ -60,7 +60,7 @@ const About = () => {
           </div>
           <ul>
             <li>prefer a healthy lifestyle</li>
-            <li>can find the optimal way to solve difficult situation in short period</li>
+            <li>can find the optimal way to overcome difficult situation in short period</li>
             <li>visited more than 70 cities</li>
             <li>ever positive and never negative</li>
             <li>genjutsu master</li>

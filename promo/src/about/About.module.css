@@ -153,6 +153,7 @@
     font-size: 18px;
   }
   .backMin {
+    transform: translate( -50%, 31%);
     height: 600px;
   }
   .imgWrapper {
